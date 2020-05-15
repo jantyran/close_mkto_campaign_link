@@ -1,0 +1,58 @@
+<?php
+
+	// include the reception code.
+	include_once './common/reception.php';
+	
+?>
+
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+	
+	<div class="container">
+		<header>
+			<div>
+				<div>
+					<h1>Marketo campaign close program</h1>
+				</div>
+			</div>
+		</header>
+		<div id="maincontent">
+			<div>
+				<h2>Sample Events</h2>
+				<p>Use PHP to see the sample work. </p>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Date</th>
+							<th>Time</th>
+							<th>Place</th>
+							<th>Event Orgnizer</th>
+							<th>Link</th>
+						</tr>
+						<?php 
+
+							// sample function.
+							// args: date, time, place, Orgnizer, formlink, maxNumber, MarketoProgramId, open/close  
+							// copy and pasete the marketoProgramId with additonal letters, #ME and A1.
+							handsonReceptionTable ( '2020/05/30', '10:00-12:00', 'Budo-kan', 'my-company', 'page url', '100', '#ME0000A1', true );
+
+						?>
+					</thead>
+				</table>
+			</div>
+			<hr>
+			<p>
+				References: <br>
+
+				<a href="https://stackoverflow.com/questions/28468805/get-programs-and-their-members-and-status-with-marketo-api">https://stackoverflow.com/questions/28468805/get-programs-and-their-members-and-status-with-marketo-api</a> <br>
+				<a href="https://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Leads/getLeadsByProgramIdUsingGET">https://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Leads/getLeadsByProgramIdUsingGET</a><br>
+				<a href="https://github.com/Marketo/REST-Sample-Code">https://github.com/Marketo/REST-Sample-Code</a>
+
+			</p>
+		</div>
+	</div> 
+</body>
+</html>
