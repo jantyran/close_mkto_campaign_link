@@ -33,7 +33,7 @@
     function redirect_to_form ($link, $maxNum, $programId) {
 
         // the url when the target event is fulled.
-        $fulled_link = "/event/fulled-event.html";
+        $fulled_link = "./fulled-event.html";
         
         if (isNotFull($maxNum, $programId)) {
             // header("Location: $link");
